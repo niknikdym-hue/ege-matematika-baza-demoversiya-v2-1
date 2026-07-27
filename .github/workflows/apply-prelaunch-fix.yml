@@ -31,7 +31,7 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Correct evidence and validation scope
+      - name: Correct evidence and make fixer idempotent
         run: |
           rm -f prelaunch-fix-error.log
           python - <<'PY'
@@ -46,6 +46,12 @@ jobs:
               'forbidden = ("2314", "0,96", "0.96")',
               'forbidden = (\'"acceptedAnswers":["3412","2314"]\', \'"acceptedAnswers":["0.4","0.96"]\', \'"official_table_2314": 1\', \'"official_table_0_96": 1\')'
           )
+          strict = '''def replace_block(path: Path, old: str, new: str) -> None:\n    text = read(path)\n    if old not in text:\n        raise RuntimeError(f"Expected block not found in {path.name}")\n    write(path, text.replace(old, new, 1))'''
+          tolerant = '''def replace_block(path: Path, old: str, new: str) -> None:\n    text = read(path)\n    if old in text:\n        write(path, text.replace(old, new, 1))\n        return\n    if new in text:\n        return\n    raise RuntimeError(f"Expected old or corrected block not found in {path.name}")'''
+          if strict in text:
+              text = text.replace(strict, tolerant, 1)
+          elif tolerant not in text:
+              raise RuntimeError('replace_block implementation is unexpected')
           script.write_text(text, encoding='utf-8', newline='\n')
 
           evidence_path = Path('ege-matematika-baza-demoversiya-INDEPENDENT-TEST-EVIDENCE.json')
