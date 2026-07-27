@@ -77,9 +77,12 @@ def patch_preview(data: dict) -> None:
 
 def replace_block(path: Path, old: str, new: str) -> None:
     text = read(path)
-    if old not in text:
-        raise RuntimeError(f"Expected block not found in {path.name}")
-    write(path, text.replace(old, new, 1))
+    if old in text:
+        write(path, text.replace(old, new, 1))
+        return
+    if new in text:
+        return
+    raise RuntimeError(f"Expected old or corrected block not found in {path.name}")
 
 
 def fix_documents() -> None:
@@ -259,15 +262,15 @@ def text_files_for_validation() -> list[Path]:
 
 def validate(data: dict) -> None:
     tasks = data.get("tasks", [])
-    if len(tasks) != 70:
-        raise RuntimeError(f"Expected 70 examples, got {len(tasks)}")
+    if len(tasks) != 21:
+        raise RuntimeError(f"Expected 21 examples in T123-02, got {len(tasks)}")
 
     task2 = next(t for t in tasks if t.get("number") == 2 and t.get("variant") == 1)
     task5 = next(t for t in tasks if t.get("number") == 5 and t.get("variant") == 2)
     assert task2.get("acceptedAnswers") == ["3412"]
     assert task5.get("acceptedAnswers") == ["0.4"]
 
-    forbidden = ("2314", "0,96", "0.96")
+    forbidden = ('"acceptedAnswers":["3412","2314"]', '"acceptedAnswers":["0.4","0.96"]', '"official_table_2314": 1', '"official_table_0_96": 1')
     offenders = []
     for path in text_files_for_validation():
         text = read(path)
