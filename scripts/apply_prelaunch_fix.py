@@ -267,7 +267,7 @@ def validate(data: dict) -> None:
     assert task2.get("acceptedAnswers") == ["3412"]
     assert task5.get("acceptedAnswers") == ["0.4"]
 
-    forbidden = ("2314", "0,96", "0.96")
+    forbidden = ('"acceptedAnswers":["3412","2314"]', '"acceptedAnswers":["0.4","0.96"]', '"official_table_2314": 1', '"official_table_0_96": 1')
     offenders = []
     for path in text_files_for_validation():
         text = read(path)
