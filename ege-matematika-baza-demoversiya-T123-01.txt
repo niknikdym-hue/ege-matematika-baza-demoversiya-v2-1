@@ -1,0 +1,123 @@
+<div class="ep-root" id="ege-math-base-demo-2026" data-state="idle">
+
+<style>
+#ege-math-base-demo-2026,#ege-math-base-demo-2026 *{box-sizing:border-box}
+#ege-math-base-demo-2026{color:#17324d;font-family:Arial,sans-serif;overflow-x:hidden}
+#ege-math-base-demo-2026 .ep-page{max-width:1220px;margin:0 auto;padding:24px 20px}
+#ege-math-base-demo-2026 .ep-stack{display:grid;gap:18px;min-width:0}
+#ege-math-base-demo-2026 .ep-panel{background:#fff;border:1px solid #dfe4eb;border-radius:16px;padding:22px;min-width:0}
+#ege-math-base-demo-2026 .ep-title{font-size:clamp(30px,5vw,52px);line-height:1.08;margin:12px 0 14px}
+#ege-math-base-demo-2026 .ep-lead{font-size:18px;line-height:1.6;max-width:900px;margin:0}
+#ege-math-base-demo-2026 .ep-meta{display:flex;gap:8px;flex-wrap:wrap}
+#ege-math-base-demo-2026 .ep-pill{display:inline-flex;align-items:center;padding:7px 10px;border-radius:999px;background:#f0f3f7;font-size:14px;font-weight:800}
+#ege-math-base-demo-2026 .ep-pill--blue{background:#eef6ff;color:#315fb5}
+#ege-math-base-demo-2026 .ep-pill--green{background:#e7f6ed;color:#245b3b}
+#ege-math-base-demo-2026 .ep-section-title{font-size:24px;line-height:1.2;margin:0 0 14px}
+#ege-math-base-demo-2026 .ep-button{position:relative!important;isolation:isolate!important;appearance:none!important;-webkit-appearance:none!important;border:1px solid #315fb5!important;border-radius:11px!important;background:#315fb5!important;background-image:none!important;color:#fff!important;-webkit-text-fill-color:#fff!important;padding:12px 17px!important;font:inherit!important;font-weight:800!important;line-height:1.2!important;box-shadow:none!important;text-shadow:none!important;filter:none!important;opacity:1!important;cursor:pointer!important}
+#ege-math-base-demo-2026 .ep-button::before,#ege-math-base-demo-2026 .ep-button::after{content:none!important;display:none!important}
+#ege-math-base-demo-2026 .ep-button:hover{background:#274f99!important}
+#ege-math-base-demo-2026 .ep-button:focus-visible{outline:3px solid rgba(49,95,181,.25)!important;outline-offset:3px!important}
+#ege-math-base-demo-2026 .ep-button--small{padding:9px 13px!important;font-size:14px!important}
+#ege-math-base-demo-2026 .ep-button--secondary{background:#fff!important;color:#17324d!important;-webkit-text-fill-color:#17324d!important;border-color:#c9d3df!important}
+#ege-math-base-demo-2026 .ep-button--secondary:hover{background:#f4f7fb!important;color:#17324d!important;-webkit-text-fill-color:#17324d!important}
+#ege-math-base-demo-2026 .ep-button:disabled{background:#f4f5f7!important;color:#7b8794!important;-webkit-text-fill-color:#7b8794!important;border-color:#d9dee5!important;cursor:not-allowed!important}
+#ege-math-base-demo-2026 .emath-breadcrumbs{font-size:14px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+#ege-math-base-demo-2026 .emath-breadcrumbs a{color:inherit}
+#ege-math-base-demo-2026 .emath-start-panel>p{line-height:1.62;margin:0 0 15px}
+#ege-math-base-demo-2026 .emath-notice{margin-top:22px;padding:16px 18px;border:1px solid #ead7a2;border-left:5px solid #b9891c;border-radius:12px;background:#fff8e8;line-height:1.55}
+#ege-math-base-demo-2026 .emath-storage-warning{display:none;margin-top:14px;padding:14px;border-left:5px solid #b84e4e;background:#fff5f5;border-radius:10px}
+#ege-math-base-demo-2026 .emath-storage-warning[data-show="true"]{display:block}
+#ege-math-base-demo-2026 .emath-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+#ege-math-base-demo-2026 .emath-hidden{display:none!important}
+#ege-math-base-demo-2026 .emath-exam-shell{display:none}
+#ege-math-base-demo-2026[data-state="running"] .emath-start-panel{display:none}
+#ege-math-base-demo-2026[data-state="running"] .emath-exam-shell{display:grid;gap:18px}
+#ege-math-base-demo-2026[data-state="finished"] .emath-start-panel,#ege-math-base-demo-2026[data-state="finished"] .emath-exam-shell{display:none}
+#ege-math-base-demo-2026 .emath-toolbar{position:sticky;top:10px;z-index:12;display:grid;grid-template-columns:auto 1fr auto auto;gap:12px;align-items:center}
+#ege-math-base-demo-2026 .emath-timer{font-variant-numeric:tabular-nums;font-weight:850;font-size:20px;white-space:nowrap}
+#ege-math-base-demo-2026 .emath-progress{height:10px;border-radius:999px;background:#eef1f5;overflow:hidden}
+#ege-math-base-demo-2026 .emath-progress>span{display:block;height:100%;width:0;background:#315fb5;transition:width .2s ease}
+#ege-math-base-demo-2026 .emath-finish{background:#8f2f40!important;border-color:#7f2635!important;color:#fff!important;-webkit-text-fill-color:#fff!important;box-shadow:0 4px 12px rgba(91,24,38,.20)!important}
+#ege-math-base-demo-2026 .emath-finish:hover{background:#772536!important;border-color:#67202f!important}
+#ege-math-base-demo-2026 .emath-nav-grid{display:grid;grid-template-columns:repeat(9,minmax(36px,1fr));gap:7px}
+#ege-math-base-demo-2026 .emath-nav-btn{min-height:38px;border:1px solid #d9dee7;border-radius:10px;background:#fff;color:#27303f;font-weight:800;cursor:pointer;box-shadow:none}
+#ege-math-base-demo-2026 .emath-nav-btn:hover{border-color:#9da8b7;background:#f7f9fc}
+#ege-math-base-demo-2026 .emath-nav-btn[data-filled="true"]{border-color:#4d9469;background:#e7f6ed;color:#245b3b}
+#ege-math-base-demo-2026 .emath-nav-btn[data-flagged="true"]{border-color:#cf7a18;background:#fff0d6;color:#704009}
+#ege-math-base-demo-2026 .emath-nav-btn[aria-current="true"]{outline:3px solid rgba(49,96,181,.24);outline-offset:2px;border-color:#315fb5}
+#ege-math-base-demo-2026 .emath-task-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+#ege-math-base-demo-2026 .emath-task-number{font-size:14px;font-weight:850;letter-spacing:.04em;text-transform:uppercase}
+#ege-math-base-demo-2026 .emath-task-prompt{font-size:17px;line-height:1.62}
+#ege-math-base-demo-2026 .emath-task-prompt li{margin-bottom:10px}
+#ege-math-base-demo-2026 .emath-figure{margin:18px 0;padding:14px;border:1px solid #dfe4eb;border-radius:14px;background:#fff;text-align:center}
+#ege-math-base-demo-2026 .emath-figure__canvas svg,#ege-math-base-demo-2026 .emath-figure__canvas img{display:block;max-width:100%;width:auto;height:auto;max-height:520px;margin:0 auto}
+#ege-math-base-demo-2026 .emath-figure figcaption{font-size:13px;line-height:1.5;margin:10px 0;color:#5b6573}
+#ege-math-base-demo-2026 .emath-answer{margin-top:20px}
+#ege-math-base-demo-2026 .emath-answer label{display:block;font-weight:800;margin-bottom:8px}
+#ege-math-base-demo-2026 .emath-input,#ege-math-base-demo-2026 .emath-textarea{width:100%;border:1px solid #cdd4df;border-radius:12px;background:#fff;padding:14px 15px;font:inherit;color:#17324d}
+#ege-math-base-demo-2026 .emath-input{max-width:460px;font-size:18px}
+#ege-math-base-demo-2026 .emath-textarea{min-height:150px;resize:vertical;line-height:1.55}
+#ege-math-base-demo-2026 .emath-help,#ege-math-base-demo-2026 .emath-mini{font-size:13px;opacity:.76;line-height:1.5}
+#ege-math-base-demo-2026 .emath-save-status{font-size:14px;margin-top:8px;font-weight:800}
+#ege-math-base-demo-2026 .emath-validation{font-size:13px;color:#a13345;font-weight:700}
+#ege-math-base-demo-2026 .emath-task-actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:space-between;margin-top:20px}
+#ege-math-base-demo-2026 .emath-task-actions__group{display:flex;gap:10px;flex-wrap:wrap}
+#ege-math-base-demo-2026 .emath-draft{margin-top:18px;padding:12px;border-radius:12px;background:#f6f8fb}
+#ege-math-base-demo-2026 .emath-draft summary{cursor:pointer}
+#ege-math-base-demo-2026 .emath-draft .emath-textarea{margin-top:12px}
+#ege-math-base-demo-2026 .emath-table-wrap{overflow-x:auto;margin:16px 0}
+#ege-math-base-demo-2026 .emath-table{border-collapse:collapse;min-width:620px;width:100%;font-size:14px}
+#ege-math-base-demo-2026 .emath-table th,#ege-math-base-demo-2026 .emath-table td{border:1px solid #aab4c1;padding:8px;text-align:center;vertical-align:top}
+#ege-math-base-demo-2026 .emath-match-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:16px 0}
+#ege-math-base-demo-2026 .emath-simple-table{width:100%;border-collapse:collapse;font-size:14px}
+#ege-math-base-demo-2026 .emath-simple-table th,#ege-math-base-demo-2026 .emath-simple-table td{border:1px solid #aab4c1;padding:9px;text-align:left}
+#ege-math-base-demo-2026 .emath-result{display:none}
+#ege-math-base-demo-2026[data-state="finished"] .emath-result{display:grid;gap:18px}
+#ege-math-base-demo-2026 .emath-score-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+#ege-math-base-demo-2026 .emath-score-card{border:1px solid #dfe4eb;border-radius:14px;padding:16px;background:#fff}
+#ege-math-base-demo-2026 .emath-score-value{font-size:30px;font-weight:850;line-height:1.15}
+#ege-math-base-demo-2026 .emath-review-list{display:grid;gap:12px}
+#ege-math-base-demo-2026 .emath-review-item{border:1px solid #dfe4eb;border-radius:14px;padding:16px;background:#fff;min-width:0}
+#ege-math-base-demo-2026 .emath-review-item[data-correct="true"]{border-left:5px solid #2f8a58}
+#ege-math-base-demo-2026 .emath-review-item[data-correct="false"]{border-left:5px solid #b84e4e}
+#ege-math-base-demo-2026 .emath-source-discrepancy{margin-top:12px;padding:13px 14px;border:1px solid #ead7a2;border-left:5px solid #b9891c;border-radius:11px;background:#fff8e8;color:#5d4510;line-height:1.55}
+#ege-math-base-demo-2026 .emath-source-discrepancy strong{color:#4e3808}
+#ege-math-base-demo-2026 .emath-modal{position:fixed;inset:0;z-index:9999;background:rgba(15,23,42,.72);display:none;align-items:center;justify-content:center;padding:18px}
+#ege-math-base-demo-2026 .emath-modal[data-open="true"]{display:flex}
+#ege-math-base-demo-2026 .emath-modal__card{background:#fff;border-radius:16px;max-width:1050px;width:100%;max-height:92vh;overflow:auto;padding:20px;outline:none}
+#ege-math-base-demo-2026 .emath-modal__head{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:14px}
+#ege-math-base-demo-2026 .emath-modal__body svg{width:100%;height:auto}
+#ege-math-base-demo-2026 .emath-reference-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+#ege-math-base-demo-2026 .emath-reference-grid section{border:1px solid #dfe4eb;border-radius:12px;padding:14px}
+#ege-math-base-demo-2026 .emath-squares{border-collapse:collapse;width:100%;font-size:12px}
+#ege-math-base-demo-2026 .emath-squares td,#ege-math-base-demo-2026 .emath-squares th{border:1px solid #dfe4eb;padding:5px;text-align:center}
+@media(max-width:900px){
+ #ege-math-base-demo-2026 .emath-toolbar{grid-template-columns:1fr auto auto}
+ #ege-math-base-demo-2026 .emath-toolbar .emath-progress{grid-column:1/-1}
+ #ege-math-base-demo-2026 .emath-nav-grid{grid-template-columns:repeat(6,minmax(36px,1fr))}
+ #ege-math-base-demo-2026 .emath-score-grid{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+ #ege-math-base-demo-2026 .ep-page{padding:16px}
+ #ege-math-base-demo-2026 .ep-panel{padding:18px 16px}
+ #ege-math-base-demo-2026 .emath-toolbar{grid-template-columns:1fr auto}
+ #ege-math-base-demo-2026 .emath-toolbar .emath-finish{grid-column:1/-1;width:100%}
+ #ege-math-base-demo-2026 .emath-nav-grid{grid-template-columns:repeat(5,minmax(36px,1fr))}
+ #ege-math-base-demo-2026 .emath-task-actions{display:block}
+ #ege-math-base-demo-2026 .emath-task-actions__group{margin-top:10px}
+ #ege-math-base-demo-2026 .emath-task-actions__group .ep-button{width:100%}
+ #ege-math-base-demo-2026 .emath-match-grid{grid-template-columns:1fr}
+ #ege-math-base-demo-2026 .emath-reference-grid{grid-template-columns:1fr}
+}
+</style>
+
+<div class="ep-page"><div class="ep-stack">
+<nav class="emath-breadcrumbs" aria-label="Хлебные крошки"><a href="https://eksamio.ru/">Главная</a><span aria-hidden="true">→</span><a href="https://eksamio.ru/ege/">ЕГЭ</a><span aria-hidden="true">→</span><a href="https://eksamio.ru/ege/demoversii/">Демоверсии</a><span aria-hidden="true">→</span><span aria-current="page">Демоверсия по базовой математике</span></nav>
+<section class="ep-panel"><div class="ep-meta"><span class="ep-pill ep-pill--blue">ЕГЭ 2026</span><span class="ep-pill">Базовый уровень</span><span class="ep-pill">21 задание</span><span class="ep-pill">180 минут</span><span class="ep-pill">21 первичный балл</span></div><h1 class="ep-title">Интерактивная демоверсия ЕГЭ по математике — базовый уровень</h1><p class="ep-lead">Официальные задания демонстрационного варианта в экзаменационном режиме: с непрерывным таймером, сохранением ответов и проверкой после завершения.</p></section>
+<section class="ep-panel emath-start-panel"><h2 class="ep-section-title">Перед началом</h2><p>Работа содержит 21 задание с кратким ответом. На выполнение отводится <strong>3 часа</strong>. Каждый правильный ответ оценивается в 1 первичный балл.</p><p>Разрешено пользоваться линейкой и справочными материалами, которые доступны по кнопке во время попытки.</p><p>В официальной демоверсии на большинстве позиций приведены примеры через «ИЛИ». При начале попытки на каждой позиции выбирается <strong>один официальный пример</strong>; выбор сохраняется после перезагрузки.</p><div class="emath-notice"><strong>Важно:</strong> правильные ответы не показываются до завершения. Таймер продолжает идти после закрытия страницы.</div><div class="emath-storage-warning" id="emath-storage-warning"><strong>Автосохранение недоступно.</strong> Браузер запретил запись в localStorage. Не закрывайте страницу до завершения попытки.</div><div class="emath-actions"><button class="ep-button" type="button" id="emath-start">Начать экзамен</button><button class="ep-button ep-button--secondary emath-hidden" type="button" id="emath-resume">Продолжить попытку</button><button class="ep-button ep-button--secondary emath-hidden" type="button" id="emath-reset-start">Начать заново</button></div></section>
+<div class="emath-exam-shell"><section class="ep-panel emath-toolbar"><div><div class="emath-timer" id="emath-timer">03:00:00</div><div class="emath-mini">Оставшееся время</div></div><div class="emath-progress"><span id="emath-progress-bar"></span></div><button class="ep-button ep-button--small ep-button--secondary" type="button" id="emath-reference">Справочные материалы</button><button class="ep-button ep-button--small emath-finish" type="button" id="emath-finish-top">Завершить экзамен</button></section><section class="ep-panel"><h2 class="ep-section-title">Навигация по заданиям</h2><div class="emath-nav-grid" id="emath-nav"></div><p class="emath-mini"><strong>Зелёный</strong> — ответ сохранён. <strong>Оранжевый</strong> — вернуться позже. Синяя рамка — открытое задание.</p></section><section class="ep-panel" id="emath-task-stage" aria-live="polite"></section></div>
+<section class="emath-result" id="emath-result"><section class="ep-panel"><div class="ep-meta"><span class="ep-pill ep-pill--green">Попытка завершена</span><span class="ep-pill" id="emath-result-date"></span></div><h2 class="ep-section-title">Результат</h2><div class="emath-score-grid"><div class="emath-score-card"><div class="emath-score-value"><span id="emath-score">0</span>/21</div><p>Первичный балл</p></div><div class="emath-score-card"><div class="emath-score-value"><span id="emath-answered">0</span>/21</div><p>Заданий с ответом</p></div><div class="emath-score-card"><div class="emath-score-value"><span id="emath-accuracy">0</span>%</div><p>Доля верных среди выполненных</p></div></div><p class="emath-mini">Перевод первичного результата в отметку на этой странице не выполняется: шкала может устанавливаться отдельно.</p></section><section class="ep-panel"><h2 class="ep-section-title">Разбор ответов</h2><div class="emath-review-list" id="emath-review"></div><div class="emath-actions"><button class="ep-button" type="button" id="emath-reset-result">Пройти заново</button></div></section></section>
+<section class="ep-panel"><p><strong>Источник:</strong> официальный демонстрационный вариант ЕГЭ по математике базового уровня, спецификация и кодификатор ФГБНУ «ФИПИ».</p><p class="emath-mini">Интерактивная оболочка и адаптивные векторные реконструкции рисунков подготовлены Эксамио. Эксамио не является официальным ресурсом ФИПИ или Рособрнадзора.</p><p><a href="https://fipi.ru/ege/demoversii-specifikacii-kodifikatory" target="_blank" rel="noopener noreferrer">Открыть официальный источник ФИПИ ↗</a></p></section>
+</div></div>
+<div class="emath-modal" id="emath-modal" aria-hidden="true"><div class="emath-modal__card" role="dialog" aria-modal="true" aria-labelledby="emath-modal-title" tabindex="-1"><div class="emath-modal__head"><h2 class="ep-section-title" id="emath-modal-title">Материалы</h2><button class="ep-button ep-button--small ep-button--secondary" id="emath-modal-close" type="button">Закрыть</button></div><div class="emath-modal__body" id="emath-modal-body"></div></div></div>
+</div>

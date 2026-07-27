@@ -1,0 +1,1045 @@
+{
+  "status": "PASS",
+  "console_errors": [],
+  "core": {
+    "nav_count": 21,
+    "variant_count": 21,
+    "reload_nav_count": 21,
+    "reload_answer": "6",
+    "variants_persisted": true,
+    "reload_timer": "02:59:59",
+    "reference_sections": 8,
+    "full_score": "21",
+    "review_count": 21
+  },
+  "scoring": [
+    {
+      "number": 1,
+      "variant": 1,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 1,
+      "variant": 2,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 1,
+      "variant": 3,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 1,
+      "variant": 4,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 2,
+      "variant": 1,
+      "kind": "ordered",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 2,
+      "variant": 2,
+      "kind": "ordered",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 3,
+      "variant": 1,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 3,
+      "variant": 2,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 3,
+      "variant": 3,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 4,
+      "variant": 1,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 4,
+      "variant": 2,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 4,
+      "variant": 3,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 5,
+      "variant": 1,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 5,
+      "variant": 2,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 5,
+      "variant": 3,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 6,
+      "variant": 1,
+      "kind": "allowed_digits",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 6,
+      "variant": 2,
+      "kind": "allowed_digits",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 6,
+      "variant": 3,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 7,
+      "variant": 1,
+      "kind": "ordered",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 7,
+      "variant": 2,
+      "kind": "ordered",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 7,
+      "variant": 3,
+      "kind": "ordered",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 8,
+      "variant": 1,
+      "kind": "unordered",
+      "correct_score": 1,
+      "invalid_score": 0,
+      "reverse_score": 1,
+      "duplicate_score": 0
+    },
+    {
+      "number": 8,
+      "variant": 2,
+      "kind": "unordered",
+      "correct_score": 1,
+      "invalid_score": 0,
+      "reverse_score": 1,
+      "duplicate_score": 0
+    },
+    {
+      "number": 9,
+      "variant": 1,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 9,
+      "variant": 2,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 10,
+      "variant": 1,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 10,
+      "variant": 2,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 10,
+      "variant": 3,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 11,
+      "variant": 1,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 11,
+      "variant": 2,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 11,
+      "variant": 3,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 11,
+      "variant": 4,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 12,
+      "variant": 1,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 12,
+      "variant": 2,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 12,
+      "variant": 3,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 12,
+      "variant": 4,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 13,
+      "variant": 1,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 13,
+      "variant": 2,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 13,
+      "variant": 3,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 13,
+      "variant": 4,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 14,
+      "variant": 1,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 14,
+      "variant": 2,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 14,
+      "variant": 3,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 15,
+      "variant": 1,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 15,
+      "variant": 2,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 15,
+      "variant": 3,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 15,
+      "variant": 4,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 16,
+      "variant": 1,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 16,
+      "variant": 2,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 16,
+      "variant": 3,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 16,
+      "variant": 4,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 17,
+      "variant": 1,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 17,
+      "variant": 2,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 17,
+      "variant": 3,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 17,
+      "variant": 4,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 18,
+      "variant": 1,
+      "kind": "ordered",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 18,
+      "variant": 2,
+      "kind": "ordered",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 18,
+      "variant": 3,
+      "kind": "ordered",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 19,
+      "variant": 1,
+      "kind": "allowed_digits",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 19,
+      "variant": 2,
+      "kind": "allowed_digits",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 19,
+      "variant": 3,
+      "kind": "allowed_digits",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 19,
+      "variant": 4,
+      "kind": "allowed_digits",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 20,
+      "variant": 1,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 20,
+      "variant": 2,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 20,
+      "variant": 3,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 20,
+      "variant": 4,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 21,
+      "variant": 1,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 21,
+      "variant": 2,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 21,
+      "variant": 3,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    },
+    {
+      "number": 21,
+      "variant": 4,
+      "kind": "numeric",
+      "correct_score": 1,
+      "invalid_score": 0
+    }
+  ],
+  "all_variants": [
+    {
+      "number": 1,
+      "variant": 1,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 1,
+      "variant": 2,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 1,
+      "variant": 3,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 1,
+      "variant": 4,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 2,
+      "variant": 1,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 2,
+      "variant": 2,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 3,
+      "variant": 1,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 3,
+      "variant": 2,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 3,
+      "variant": 3,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 4,
+      "variant": 1,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 4,
+      "variant": 2,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 4,
+      "variant": 3,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 5,
+      "variant": 1,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 5,
+      "variant": 2,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 5,
+      "variant": 3,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 6,
+      "variant": 1,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 6,
+      "variant": 2,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 6,
+      "variant": 3,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 7,
+      "variant": 1,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 7,
+      "variant": 2,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 7,
+      "variant": 3,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 8,
+      "variant": 1,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 8,
+      "variant": 2,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 9,
+      "variant": 1,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 9,
+      "variant": 2,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 10,
+      "variant": 1,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 10,
+      "variant": 2,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 10,
+      "variant": 3,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 11,
+      "variant": 1,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 11,
+      "variant": 2,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 11,
+      "variant": 3,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 11,
+      "variant": 4,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 12,
+      "variant": 1,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 12,
+      "variant": 2,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 12,
+      "variant": 3,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 12,
+      "variant": 4,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 13,
+      "variant": 1,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 13,
+      "variant": 2,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 13,
+      "variant": 3,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 13,
+      "variant": 4,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 14,
+      "variant": 1,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 14,
+      "variant": 2,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 14,
+      "variant": 3,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 15,
+      "variant": 1,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 15,
+      "variant": 2,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 15,
+      "variant": 3,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 15,
+      "variant": 4,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 16,
+      "variant": 1,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 16,
+      "variant": 2,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 16,
+      "variant": 3,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 16,
+      "variant": 4,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 17,
+      "variant": 1,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 17,
+      "variant": 2,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 17,
+      "variant": 3,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 17,
+      "variant": 4,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 18,
+      "variant": 1,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 18,
+      "variant": 2,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 18,
+      "variant": 3,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 19,
+      "variant": 1,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 19,
+      "variant": 2,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 19,
+      "variant": 3,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 19,
+      "variant": 4,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 20,
+      "variant": 1,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 20,
+      "variant": 2,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 20,
+      "variant": 3,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 20,
+      "variant": 4,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 21,
+      "variant": 1,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 21,
+      "variant": 2,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 21,
+      "variant": 3,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    },
+    {
+      "number": 21,
+      "variant": 4,
+      "overflow": false,
+      "has_prompt": true,
+      "has_input": true
+    }
+  ],
+  "responsive": [
+    {
+      "width": 320,
+      "overflow": []
+    },
+    {
+      "width": 360,
+      "overflow": []
+    },
+    {
+      "width": 390,
+      "overflow": []
+    },
+    {
+      "width": 768,
+      "overflow": []
+    },
+    {
+      "width": 1280,
+      "overflow": []
+    }
+  ],
+  "source_discrepancies": {
+    "task_2_variant_1": {
+      "condition_3412": 1,
+      "official_table_2314": 1,
+      "nearby_wrong_3413": 0,
+      "malformed_3_space_412": 0
+    },
+    "task_5_variant_2": {
+      "condition_0_4": 1,
+      "official_table_0_96": 1,
+      "nearby_wrong_0_95": 0,
+      "malformed_0_4x": 0
+    },
+    "review_blocks": 2,
+    "review_text": [
+      "Расхождение в официальном исходнике. По данным условия: А–3, Б–4, В–1, Г–2, поэтому получается 3412. В итоговой таблице ответов официальной демоверсии указано 2314. Эксамио принимает оба варианта, чтобы расхождение исходника не снижало результат.",
+      "Расхождение в официальном исходнике. По условию жёлтых автомобилей 15 − 9 = 6, поэтому вероятность равна 6/15 = 0,4. В итоговой таблице ответов официальной демоверсии указано 0,96. Эксамио принимает оба варианта, чтобы расхождение исходника не снижало результат."
+    ],
+    "two_answer_score": "2"
+  }
+}

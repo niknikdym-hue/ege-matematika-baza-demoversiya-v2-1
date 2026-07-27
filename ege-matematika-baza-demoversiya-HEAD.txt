@@ -1,0 +1,24 @@
+<!-- Title, Description and Keywords are entered in Tilda SEO settings. -->
+<link rel="canonical" href="https://eksamio.ru/ege/matematika-baza/demoversiya/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Эксамио">
+<meta property="og:title" content="Интерактивная демоверсия ЕГЭ по базовой математике">
+<meta property="og:description" content="Официальный формат, непрерывный таймер, сохранение ответов и проверка после завершения.">
+<meta property="og:url" content="https://eksamio.ru/ege/matematika-baza/demoversiya/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Демоверсия ЕГЭ по базовой математике">
+<meta name="twitter:description" content="Пройдите официальный демонстрационный вариант как единую экзаменационную попытку.">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Интерактивная демоверсия ЕГЭ по математике — базовый уровень",
+  "description":"Интерактивный официальный демонстрационный вариант ЕГЭ по математике базового уровня.",
+  "url":"https://eksamio.ru/ege/matematika-baza/demoversiya/",
+  "inLanguage":"ru-RU",
+  "educationalLevel":"11 класс",
+  "learningResourceType":"Интерактивная демоверсия",
+  "isPartOf":{"@type":"CollectionPage","name":"Интерактивные демоверсии ЕГЭ","url":"https://eksamio.ru/ege/demoversii/"}
+}
+</script>

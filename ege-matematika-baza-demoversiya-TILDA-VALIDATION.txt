@@ -1,0 +1,11 @@
+TILDA HTML VALIDATION
+
+STATUS: PASS
+
+ege-matematika-baza-demoversiya-T123-01.txt: PASS — незакрытых и лишних закрывающих тегов не обнаружено.
+ege-matematika-baza-demoversiya-T123-02.txt: PASS — незакрытых и лишних закрывающих тегов не обнаружено.
+ege-matematika-baza-demoversiya-T123-03.txt: PASS — незакрытых и лишних закрывающих тегов не обнаружено.
+ege-matematika-baza-demoversiya-T123-04.txt: PASS — незакрытых и лишних закрывающих тегов не обнаружено.
+ege-matematika-baza-demoversiya-T123-05.txt: PASS — незакрытых и лишних закрывающих тегов не обнаружено.
+
+Проверка выполнена для каждого файла отдельно.
