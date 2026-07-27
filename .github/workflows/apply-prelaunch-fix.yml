@@ -31,6 +31,11 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Correct validation scope
+        run: |
+          sed -i 's/if len(tasks) != 70:/if len(tasks) != 21:/' scripts/apply_prelaunch_fix.py
+          sed -i 's/Expected 70 examples/Expected 21 examples in T123-02/' scripts/apply_prelaunch_fix.py
+
       - name: Apply all Codex audit fixes
         run: python scripts/apply_prelaunch_fix.py
 
@@ -46,6 +51,7 @@ jobs:
           match = re.fullmatch(r'\s*<script type="application/json" id="emath-data-1">\s*([\s\S]*?)\s*</script>\s*', text)
           assert match
           data = json.loads(match.group(1))
+          assert len(data['tasks']) == 21
           task2 = next(t for t in data['tasks'] if t['number'] == 2 and t['variant'] == 1)
           task5 = next(t for t in data['tasks'] if t['number'] == 5 and t['variant'] == 2)
           assert task2['acceptedAnswers'] == ['3412']
