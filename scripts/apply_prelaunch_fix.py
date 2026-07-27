@@ -77,9 +77,12 @@ def patch_preview(data: dict) -> None:
 
 def replace_block(path: Path, old: str, new: str) -> None:
     text = read(path)
-    if old not in text:
-        raise RuntimeError(f"Expected block not found in {path.name}")
-    write(path, text.replace(old, new, 1))
+    if old in text:
+        write(path, text.replace(old, new, 1))
+        return
+    if new in text:
+        return
+    raise RuntimeError(f"Expected old or corrected block not found in {path.name}")
 
 
 def fix_documents() -> None:
