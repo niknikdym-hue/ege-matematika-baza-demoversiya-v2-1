@@ -1,0 +1,66 @@
+name: Apply base math prelaunch fixes
+
+on:
+  push:
+    paths:
+      - scripts/apply_prelaunch_fix.py
+      - .github/workflows/apply-prelaunch-fix.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply-fixes:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Apply all Codex audit fixes
+        run: python scripts/apply_prelaunch_fix.py
+
+      - name: Validate corrected package
+        run: |
+          git diff --check
+          python -m zipfile -t ege-matematika-baza-demoversiya-v2-1-fixed.zip
+          python - <<'PY'
+          import json, re
+          from pathlib import Path
+          path = Path('ege-matematika-baza-demoversiya-T123-02.txt')
+          text = path.read_text(encoding='utf-8')
+          match = re.fullmatch(r'\s*<script type="application/json" id="emath-data-1">\s*([\s\S]*?)\s*</script>\s*', text)
+          assert match
+          data = json.loads(match.group(1))
+          task2 = next(t for t in data['tasks'] if t['number'] == 2 and t['variant'] == 1)
+          task5 = next(t for t in data['tasks'] if t['number'] == 5 and t['variant'] == 2)
+          assert task2['acceptedAnswers'] == ['3412']
+          assert task5['acceptedAnswers'] == ['0.4']
+          print('Official answer validation: PASS')
+          PY
+
+      - name: Commit corrected package
+        run: |
+          if git diff --quiet && git ls-files --error-unmatch ege-matematika-baza-demoversiya-v2-1-fixed.zip >/dev/null 2>&1; then
+            echo "No changes were required."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "Fix base mathematics prelaunch audit findings"
+            git push
+          fi
+
+      - name: Upload corrected ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: ege-matematika-baza-demoversiya-v2-1-fixed
+          path: ege-matematika-baza-demoversiya-v2-1-fixed.zip
+          if-no-files-found: error
+          retention-days: 30
