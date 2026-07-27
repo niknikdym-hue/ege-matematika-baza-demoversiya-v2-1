@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/runner/work/ege-matematika-baza-demoversiya-v2-1/ege-matematika-baza-demoversiya-v2-1/scripts/apply_prelaunch_fix.py", line 350, in <module>
+    main()
+  File "/home/runner/work/ege-matematika-baza-demoversiya-v2-1/ege-matematika-baza-demoversiya-v2-1/scripts/apply_prelaunch_fix.py", line 342, in main
+    validate(data)
+  File "/home/runner/work/ege-matematika-baza-demoversiya-v2-1/ege-matematika-baza-demoversiya-v2-1/scripts/apply_prelaunch_fix.py", line 277, in validate
+    raise RuntimeError("Forbidden obsolete keys remain in: " + ", ".join(offenders))
+RuntimeError: Forbidden obsolete keys remain in: ege-matematika-baza-demoversiya-AUDIT.txt, ege-matematika-baza-demoversiya-INSTALLATION.txt, ege-matematika-baza-demoversiya-TEST-REPORT.txt, ege-matematika-baza-demoversiya-INDEPENDENT-TEST-EVIDENCE.json

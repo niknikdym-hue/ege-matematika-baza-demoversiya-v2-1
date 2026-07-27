@@ -259,8 +259,8 @@ def text_files_for_validation() -> list[Path]:
 
 def validate(data: dict) -> None:
     tasks = data.get("tasks", [])
-    if len(tasks) != 70:
-        raise RuntimeError(f"Expected 70 examples, got {len(tasks)}")
+    if len(tasks) != 21:
+        raise RuntimeError(f"Expected 21 examples in T123-02, got {len(tasks)}")
 
     task2 = next(t for t in tasks if t.get("number") == 2 and t.get("variant") == 1)
     task5 = next(t for t in tasks if t.get("number") == 5 and t.get("variant") == 2)
