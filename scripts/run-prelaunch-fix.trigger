@@ -1,1 +1,1 @@
-Run base mathematics correction for Codex audit dated 2026-07-26.
+Run base mathematics final source-fidelity audit export 2026-08-09.
